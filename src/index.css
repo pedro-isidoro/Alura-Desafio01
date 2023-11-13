@@ -3,7 +3,7 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: center no-repeat url(./img/bitcoins.jpg);
+  background: center no-repeat url(./img/bitcoins.webp);
   background-size: cover;
 }
 
@@ -13,12 +13,12 @@ body{
 }
 
 .fireBackground{
-  background: center no-repeat url(./img/fire.jpg);
+  background: center no-repeat url(./img/fire.webp);
   background-size: cover;
 }
 
 .coinsBackground{
-  background: center no-repeat url(./img/coins.jpg);
+  background: center no-repeat url(./img/coins.webp);
   background-size: cover;
 }
 
@@ -114,11 +114,6 @@ body{
 }
 
 @media(max-width: 500px){
-  body{
-    background: none;
-    background-color: #2d29319f;
-  }
-
   .converter{
     width: 320px;
     height: 520px;
