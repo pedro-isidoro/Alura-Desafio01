@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { addCoinsBackground } from '../toReal/App';
 
 function MundialConverter() {
   const [value, setValue] = useState();
@@ -101,7 +102,7 @@ function MundialConverter() {
         </div>
         <div className="links">    
           <button className='btn' onClick={addTextToP}>Resultado!</button>
-          <Link className='btn-converter' to='/'>1° Conversor</Link>
+          <Link className='btn-converter' onClick={addCoinsBackground} to='/'>1° Conversor</Link>
         </div>
     </div>
   )

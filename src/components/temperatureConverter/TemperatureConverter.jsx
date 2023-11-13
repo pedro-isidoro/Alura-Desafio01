@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { addFireBackground, addCoinsBackground } from '../toReal/App';
 
 function TemperatureConverter() {
   const [temperature, setTemperature] = useState();
@@ -53,6 +54,11 @@ function TemperatureConverter() {
 
     paragraph.innerHTML = text;
   }
+
+  function background(){
+    addFireBackground();
+    addCoinsBackground();
+  }
   return (
     <div className='converter'>
         <h1 className='title'>Conversor de Fahrenheit / Celsius / Kelvin</h1>
@@ -66,7 +72,7 @@ function TemperatureConverter() {
         </div>
         <div className="links">    
           <button className='btn' onClick={addTextToP}>Resultado!</button>
-          <Link className='btn-converter' to='/global-converter'>4° Conversor</Link>
+          <Link className='btn-converter' onClick={background} to='/global-converter'>4° Conversor</Link>
         </div>
     </div>
   )

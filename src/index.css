@@ -3,11 +3,22 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #2d29319f;
+  background: center no-repeat url(./img/bitcoins.jpg);
+  background-size: cover;
 }
 
 .starsBackground{
   background: center no-repeat url(./img/stars.gif);
+  background-size: cover;
+}
+
+.fireBackground{
+  background: center no-repeat url(./img/fire.jpg);
+  background-size: cover;
+}
+
+.coinsBackground{
+  background: center no-repeat url(./img/coins.jpg);
   background-size: cover;
 }
 
@@ -103,6 +114,11 @@ body{
 }
 
 @media(max-width: 500px){
+  body{
+    background: none;
+    background-color: #2d29319f;
+  }
+
   .converter{
     width: 320px;
     height: 520px;

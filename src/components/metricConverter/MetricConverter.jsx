@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
-import { addStarsBackground } from '../toReal/App';
+import { addStarsBackground, addFireBackground } from '../toReal/App';
 
 function MetricConverter() {
   const [name, setName] = useState('');
@@ -15,6 +15,11 @@ function MetricConverter() {
 
     paragraph.innerHTML = text;
   };
+
+  function background(){
+    addStarsBackground();
+    addFireBackground();
+  }
   return (
     <div className='converter'>
         <h1 className='title'>Conversor de Anos-Luz para Metros</h1>
@@ -27,7 +32,7 @@ function MetricConverter() {
         </div>
         <div className="links">    
           <button className='btn' onClick={addTextToP}>Resultado!</button>
-          <Link className='btn-converter' onClick={addStarsBackground} to='/temperature-converter'>3° Conversor</Link>
+          <Link className='btn-converter' onClick={background} to='/temperature-converter'>3° Conversor</Link>
         </div>
     </div>
   )
